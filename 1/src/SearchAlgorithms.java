@@ -49,11 +49,18 @@ public class SearchAlgorithms {
 			{
 				return mid;
 			}
+			
 			else if(query < nums[mid])
 			{
+				return L-1;
 				
 			}
-		}
+			
+			else if(query > nums[mid])
+			{
+				return R+1;
+			}
+		}	
+		return(-1);
 	}
-	
 }
