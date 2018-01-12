@@ -17,7 +17,7 @@ public class SearchAlgorithms {
 		System.out.println(binSearch(test2, 25));
 		System.out.println(linSearch(test2, 25));
 		
-		System.out.println(binSearch(test1, 10));
+		System.out.println(binSearch(test1, 10)); 
 		System.out.println(linSearch(test1, 1));
 	
 		System.out.println(binSearch(test1, 1));
