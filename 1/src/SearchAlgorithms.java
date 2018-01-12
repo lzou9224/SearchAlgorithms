@@ -41,9 +41,9 @@ public class SearchAlgorithms {
 		int L=0;
 		int R= nums.length-1;
 		
-		while(L<= R)
+		while(L<=R)
 		{
-			int mid= L+(R-L)/2;
+			int mid= (L+((R-L)/2));
 			
 			if(query==nums[mid])
 			{
@@ -52,13 +52,13 @@ public class SearchAlgorithms {
 			
 			else if(query < nums[mid])
 			{
-				return L-1;
+				R= mid-1;
 				
 			}
 			
 			else if(query > nums[mid])
 			{
-				return R+1;
+				L= mid+1;
 			}
 		}	
 		return(-1);
