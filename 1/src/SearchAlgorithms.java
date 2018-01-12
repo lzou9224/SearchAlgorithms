@@ -11,7 +11,7 @@ public class SearchAlgorithms {
 		System.out.println(binSearch(test1, 3));
 		System.out.println(linSearch(test1, 3));
 	
-		System.out.prinln(binSearch(test2, 23));
+		System.out.println(binSearch(test2, 23));
 		System.out.println(linSearch(test2, 23));
 	
 		System.out.println(binSearch(test2, 25));
@@ -39,17 +39,17 @@ public class SearchAlgorithms {
 	public static int binSearch( int[] nums, int query)
 	{
 		int L=0;
-		int R= arr.length-1;
+		int R= nums.length-1;
 		
 		while(L<= R)
 		{
 			int mid= L+(R-L)/2;
 			
-			if(query==arr[mid])
+			if(query==nums[mid])
 			{
 				return mid;
 			}
-			if else(query < arr[mid])
+			else if(query < nums[mid])
 			{
 				
 			}
